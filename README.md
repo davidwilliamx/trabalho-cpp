@@ -10,4 +10,4 @@
 > - Wikipédia
 > - MDN Web Docs
 
-[Link](https://davidwilliamx.github.io/trabalho-cpp/) para a página. 
+<a href="https://davidwilliamx.github.io/trabalho-cpp" target="_blank">Link</a> para a página.
