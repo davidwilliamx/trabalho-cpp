@@ -63,10 +63,12 @@ p {
 }
 .hero__image {
     display: none;
+    z-index: -1;
 }
 .hero__title {
     margin-bottom: 30px;
     max-width: 520px;
+    z-index: 5;
 }
 .hero__btn:hover {
     background-color: transparent;
