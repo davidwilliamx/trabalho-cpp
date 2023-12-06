@@ -9,71 +9,86 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="hero">
-            <h1 class="hero__title">C++ é uma linguagem de programação de propósito geral, orientada a objetos e compilada.</h1>
-            <input class="btn hero__btn" type="button" value="Saiba mais">
+            <div class="hero__content">
+                <h1 class="hero__title title">C++ é uma linguagem de programação de propósito geral, orientada a objetos e compilada.</h1>
+                <a href="#historia" class="btn hero__btn">Saiba mais</a>
+            </div>
+            <div class="hero__image">
+                <img src="assets/images/hero.png" alt="Imagem azul escrito C++.">
+            </div>
         </div>
     </header>
-    <main class="main">
-        <section class="historia">
-            <h2 class="historia__title">História</h2>
+    <main id="main" class="main">
+        <section id="historia" class="historia">
+            <h2 class="historia__title title">História</h2>
             <div class="historia__content">
-                <div class="content">
-                    <div class="content__start">
-                        <p>C++ foi desenvolvido por <strong>Bjarne Stroustrup</strong> nos Bell Labs na década de 1980. O objetivo de Stroustrup era criar uma linguagem de programação que combinasse a eficiência e a flexibilidade do C com o poder da programação orientada a objetos.</p>
-                        <p>Stroustrup começou a trabalhar em C++ em 1979, inicialmente chamando-a de "C com classes". As primeiras versões da linguagem eram bastante simples, mas Stroustrup continuou a desenvolvê-la e adicioná-la novos recursos ao longo dos anos.</p>
-                        <p>Em 1985, a primeira versão oficial do C++ foi lançada. A linguagem foi rapidamente adotada por desenvolvedores em todo o mundo e tornou-se uma das linguagens de programação mais populares do mundo.</p>
-                    </div>
-                    <div class="content__cards">
-                        <div class="card card__eficiencia">
-                            <h3 class="card__title">Eficiência</h3>
-                            <p class="card__body">C++ é uma linguagem de programação compilada, o que significa que o código é convertido em código de máquina antes de ser executado. Isso resulta em um desempenho superior em comparação com linguagens interpretadas, como Python e JavaScript.</p>
-                        </div>
-                        <div class="card card__flex">
-                            <h3 class="card__title">Flexibilidade</h3>
-                            <p class="card__body">C++ é uma linguagem de propósito geral, o que significa que pode ser usada para criar uma ampla variedade de softwares.</p>
-                        </div>
-                        <div class="card card__poder">
-                            <h3 class="card__title">Poder</h3>
-                            <p class="card__body">C++ fornece suporte para programação orientada a objetos, que é uma abordagem de programação poderosa que permite que os desenvolvedores criem softwares mais modulares e reutilizáveis.</p>
+                <div class="content__header">
+                    <p>C++ foi desenvolvido por <strong>Bjarne Stroustrup</strong> nos Bell Labs na década de 1980. O objetivo de Stroustrup era criar uma linguagem de programação que combinasse a eficiência e a flexibilidade do C com o poder da programação orientada a objetos.</p>
+                    <p>Stroustrup começou a trabalhar em C++ em 1979, inicialmente chamando-a de "C com classes". As primeiras versões da linguagem eram bastante simples, mas Stroustrup continuou a desenvolvê-la e adicioná-la novos recursos ao longo dos anos.</p>
+                    <p>Em 1985, a primeira versão oficial do C++ foi lançada. A linguagem foi rapidamente adotada por desenvolvedores em todo o mundo e tornou-se uma das linguagens de programação mais populares do mundo.</p>
+                </div>
+                <div class="content__cards">
+                    <div class="card card__eficiencia">
+                        <h3 class="card__title title">Eficiência</h3>
+                        <div class="card__body">
+                            <p>C++ é uma linguagem de programação compilada, o que significa que o código é convertido em código de máquina antes de ser executado. Isso resulta em um desempenho superior em comparação com linguagens interpretadas, como Python e JavaScript.</p>
                         </div>
                     </div>
-                    <div class="content__end">
-                        <p>Atualmente, C++ é usada para criar uma ampla variedade de softwares, incluindo:</p>
-                        <ul>
-                            <li><strong>Sistemas operacionais:</strong> Windows, macOS, Linux, Android e iOS são todos baseados em C++.</li>
-                            <li><strong>Aplicativos de desktop:</strong> C++ é uma linguagem popular para desenvolvimento de aplicativos de desktop, como navegadores da web, editores de texto e software de produtividade.</li>
-                            <li><strong>Aplicativos móveis:</strong> C++ é uma linguagem popular para desenvolvimento de aplicativos móveis, como jogos e aplicativos de negócios.</li>
-                            <li><strong>Jogos:</strong> C++ é uma linguagem popular para desenvolvimento de jogos, pois oferece o desempenho e a flexibilidade necessários para criar jogos complexos e envolventes.</li>
-                        </ul>
-                        <p>C++ continua a ser uma linguagem de programação importante e popular. É uma linguagem poderosa e versátil que pode ser usada para criar uma ampla variedade de softwares.</p>
-                        <div class="content__quote">
-                            <blockquote>
-                                <p>"Sempre desejei que o meu computador fosse tão fácil de usar como o meu telefone. O meu desejo realizou-se. Já não sei usar o meu telefone."</p>
-                                <small><em>Bjarne Stroustrup</em></small>
-                            </blockquote>
-                            <img src="assets/images/c++_creator.png" alt="Imagem de Bjarne Stroustrup criador do C++.">
+                    <div class="card card__flex">
+                        <h3 class="card__title title">Flexibilidade</h3>
+                        <div class="card__body">
+                            <p>C++ é uma linguagem de propósito geral, o que significa que pode ser usada para criar uma ampla variedade de softwares.</p>
+                            <p>Abaixo os repositórios Github parcial ou totalmente escritos em <strong>C++</strong> com mais estrelas no período de 30 dias:</p>
+                            <ul class="list">
+                                <li class="list__item"><a class="link__item" target="_blank" href="https://github.com/bitcoin/bitcoin">Bitcoin Core integration</a></li>
+                                <li class="list__item"><a class="link__item" target="_blank" href="https://github.com/nomic-ai/gpt4all">gpt4all</a></li>
+                                <li class="list__item"><a class="link__item" target="_blank" href="https://github.com/yuzu-emu/yuzu-android">yuzu</a></li>
+                            </ul>
                         </div>
+                    </div>
+                    <div class="card card__poder">
+                        <h3 class="card__title title">Poder</h3>
+                        <div class="card__body">
+                            <p>C++ fornece suporte para programação orientada a objetos, que é uma abordagem de programação poderosa que permite que os desenvolvedores criem softwares mais modulares e reutilizáveis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__footer">
+                    <p>Atualmente, C++ é usada para criar uma ampla variedade de softwares, incluindo:</p>
+                    <ul class="list__footer">
+                        <li class="list__footer-item"><strong>Sistemas operacionais:</strong> Windows, macOS, Linux, Android e iOS são todos baseados em C++.</li>
+                        <li class="list__footer-item"><strong>Aplicativos de desktop:</strong> C++ é uma linguagem popular para desenvolvimento de aplicativos de desktop, como navegadores da web, editores de texto e software de produtividade.</li>
+                        <li class="list__footer-item"><strong>Aplicativos móveis:</strong> C++ é uma linguagem popular para desenvolvimento de aplicativos móveis, como jogos e aplicativos de negócios.</li>
+                        <li class="list__footer-item"><strong>Jogos:</strong> C++ é uma linguagem popular para desenvolvimento de jogos, pois oferece o desempenho e a flexibilidade necessários para criar jogos complexos e envolventes.</li>
+                    </ul>
+                    <p>C++ continua a ser uma linguagem de programação importante e popular. É uma linguagem poderosa e versátil que pode ser usada para criar uma ampla variedade de softwares.</p>
+                    <div class="quote">
+                        <blockquote>
+                            <p>"Sempre desejei que o meu computador fosse tão fácil de usar como o meu telefone. O meu desejo realizou-se. Já não sei usar o meu telefone."</p>
+                            <small class="quote__author"><em>Bjarne Stroustrup</em></small>
+                        </blockquote>
+                        <img src="assets/images/c++_creator.png" alt="Imagem de Bjarne Stroustrup criador do C++.">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="basico">
-            <h2 class="basico__title">Básico</h2>
-            <p class="basico__subtitle">Para começar a aprender C++, é importante ter uma base sólida em programação. Se você é iniciante, recomendo que você comece aprendendo as seguintes noções básicas.</p>
+        <section id="basico" class="basico">
+            <h2 class="basico__title title">Básico</h2>
+            <p class="basico__subtitle subtitle">Para começar a aprender C++, é importante ter uma base sólida em programação. Se você é iniciante, recomendo que você comece aprendendo as seguintes noções básicas.</p>
             <div class="basico__content">
                 <div class="content">
-                    <div class="content__terms">
+                    <div class="content__topics">
                         <details>
-                            <summary>Tipos de dados</summary>
+                            <summary class="title">Tipos de dados</summary>
                             <p>Em C++, os tipos de dados determinam o tipo de valor que uma variável pode armazenar. Os tipos de dados básicos incluem int, char, float, double e bool.</p>
-                            <ul>
-                                <li><strong>int:</strong> Números inteiros, como 1, 2, 3, 4, ...</li>
-                                <li><strong>char:</strong> Caracteres, como 'a', 'b', 'c', ...</li>
-                                <li><strong>float:</strong> Números de ponto flutuante, como 3.14, 2.71, ...</li>
-                                <li><strong>double:</strong> Números de ponto flutuante de precisão dupla, como 3.14159265358979323846, 2.71828182845904523536, ...</li>
-                                <li><strong>bool:</strong> Booleanos, que podem ter dois valores: true ou false.</li>
+                            <ul class="list__dados">
+                                <li class="list__dados-item"><strong>int:</strong> Números inteiros, como 1, 2, 3, 4, ...</li>
+                                <li class="list__dados-item"><strong>char:</strong> Caracteres, como 'a', 'b', 'c', ...</li>
+                                <li class="list__dados-item"><strong>float:</strong> Números de ponto flutuante, como 3.14, 2.71, ...</li>
+                                <li class="list__dados-item"><strong>double:</strong> Números de ponto flutuante de precisão dupla, como 3.14159265358979323846, 2.71828182845904523536, ...</li>
+                                <li class="list__dados-item"><strong>bool:</strong> Booleanos, que podem ter dois valores: true ou false.</li>
                             </ul>
                             <p>
                                 <code>
@@ -91,12 +106,12 @@
                             </p>
                         </details>
                         <details>
-                            <summary>Operadores</summary>
+                            <summary class="title">Operadores</summary>
                             <p>Os operadores são usados para realizar operações matemáticas, lógicas e de comparação em variáveis.</p>
-                            <ul>
-                                <li><strong>Operadores aritméticos:</strong> +, -, *, /, %</li>
-                                <li><strong>Operadores lógicos:</strong> &&, ||, !, ^, ~</li>
-                                <li><strong>Operadores de comparação:</strong> ==, !=, <, >, <=, >=</li>
+                            <ul class="list__operadores">
+                                <li class="list__operadores-item"><strong>Operadores aritméticos:</strong> +, -, *, /, %</li>
+                                <li class="list__operadores-item"><strong>Operadores lógicos:</strong> &&, ||, !, ^, ~</li>
+                                <li class="list__operadores-item"><strong>Operadores de comparação:</strong> ==, !=, <, >, <=, >=</li>
                             </ul>
                             <p>
                                 <code>
@@ -137,11 +152,11 @@
                             </p>
                         </details>
                         <details>
-                            <summary>Entrada e saída de dados</summary>
+                            <summary class="title">Entrada e saída de dados</summary>
                             <p>C++ oferece várias maneiras de ler e escrever dados do usuário. Os métodos mais comuns são cin e cout.</p>
-                            <ul>
-                                <li><strong>cin:</strong> O operador <code>cin</code> é usado para ler dados do usuário. Ele pode ser usado para ler números, caracteres ou strings.</li>
-                                <li><strong>cout:</strong> O operador <code>cout</code> é usado para escrever dados na tela. Ele pode ser usado para escrever números, caracteres ou strings.</li>
+                            <ul class="list__entrada">
+                                <li class="list__entrada-item"><strong>cin:</strong> O operador <code>cin</code> é usado para ler dados do usuário. Ele pode ser usado para ler números, caracteres ou strings.</li>
+                                <li class="list__entrada-item"><strong>cout:</strong> O operador <code>cout</code> é usado para escrever dados na tela. Ele pode ser usado para escrever números, caracteres ou strings.</li>
                             </ul>
                             <p>
                                 <code>
@@ -170,7 +185,7 @@
                             </p>
                         </details>
                         <details>
-                            <summary>Estruturas de decisão</summary>
+                            <summary class="title">Estruturas de decisão</summary>
                             <p>As estruturas de decisão permitem que você controle o fluxo de execução do seu programa. Elas permitem que você execute um bloco de código apenas se uma condição for verdadeira.</p>
                             <p><strong>if:</strong> A estrutura <code>if</code> permite que você execute um bloco de código se uma condição for verdadeira.</p>
                             <p><code>
@@ -227,7 +242,7 @@
                             </code></p>
                         </details>
                         <details>
-                            <summary>Estruturas de repetição</summary>
+                            <summary class="title">Estruturas de repetição</summary>
                             <p>As estruturas de repetição permitem que você execute um bloco de código várias vezes.</p>
                             <p><strong>for:</strong> A estrutura <code>for</code> permite que você execute um bloco de código um número específico de vezes.</p>
                             <p>
@@ -270,11 +285,11 @@
                 </div>
             </div>
         </section>
-        <section class="inter">
-            <h2 class="inter__title">Intermediário</h2>
-            <p class="inter__subtitle">Após aprender as noções básicas, você pode começar a explorar conceitos mais avançados de C++. Alguns tópicos importantes incluem herança, polimorfismo entre outros.</p>
+        <section id="inter" class="inter">
+            <h2 class="inter__title title">Intermediário</h2>
+            <p class="inter__subtitle subtitle">Após aprender as noções básicas, você pode começar a explorar conceitos mais avançados de C++. Alguns tópicos importantes incluem herança, polimorfismo entre outros.</p>
             <div class="inter__content">
-                <div class="topico">
+                <div class="inter__topico">
                     <div class="topico__classe">
                         <h4 class="title">Classes</h4>
                         <div class="text">
@@ -299,7 +314,7 @@
                         <div class="text">
                             <p>Em C++, a herança é uma relação entre duas classes na qual a classe derivada herda os atributos e métodos da classe base. Isso permite que o programador reutilize código existente e crie classes mais complexas com menos esforço.</p>
                             <p>A herança pode ser usada para criar classes mais complexas com menos esforço. Por exemplo, uma classe Carro pode herdar de uma classe Veiculo. Isso significa que a classe Carro terá todos os atributos e métodos da classe Veiculo.</p>
-                            <p>A herança pode ser simples ou multipla. A herança simples ocorre quando uma classe herda de apenas uma outra classe. A herança múltipla ocorre quando uma classe herda de mais de uma outra classe.</p>
+                            <p>A herança pode ser simples ou múltipla. A herança simples ocorre quando uma classe herda de apenas uma outra classe. A herança múltipla ocorre quando uma classe herda de mais de uma outra classe.</p>
                         </div>
                     </div>
                     <div class="topico__polimorfismo">
@@ -314,11 +329,11 @@
             </div>
         </section>
         <section class="avancado">
-            <h2 class="avancado__title">Avançado</h2>
-            <p class="avancado__subtitle">Ao dominar os conceitos intermediários, você estará pronto para aprender tópicos mais avançados de C++.</p>
+            <h2 class="avancado__title title">Avançado</h2>
+            <p class="avancado__subtitle subtitle">Ao dominar os conceitos intermediários, você estará pronto para aprender tópicos mais avançados de C++.</p>
             <div class="avancado__content">
                 <div class="poo">
-                    <h3 class="poo__title">Programação orientada a objetos</h3>
+                    <h3 class="poo__title title">Programação orientada a objetos</h3>
                     <div class="poo__content">
                         <p>A programação orientada a objetos (POO) é uma abordagem de programação que enfatiza o uso de classes e objetos. As classes são modelos que definem os atributos e métodos de um objeto. Os objetos são instâncias de uma classe. A POO oferece uma série de vantagens em relação à programação estruturada, incluindo:</p>
                         <ul>
@@ -328,25 +343,25 @@
                         </ul>
                         <div class="poo__cards">
                             <div class="card card__heranca">
-                                <h4 class="header">Herança</h4>
+                                <h4 class="header title">Herança</h4>
                                 <div class="content">
                                     <p>A herança permite que uma classe herde os atributos e métodos de outra classe.</p>
                                 </div>
                             </div>
                             <div class="card card__poli">
-                                <h4 class="header">Polimorfismo</h4>
+                                <h4 class="header title">Polimorfismo</h4>
                                 <div class="content">
                                     <p>O polimorfismo permite que uma função ou operador seja usado com objetos de diferentes tipos.</p>
                                 </div>
                             </div>
                             <div class="card card__encap">
-                                <h4 class="header">Encapsulamento</h4>
+                                <h4 class="header title">Encapsulamento</h4>
                                 <div class="content">
                                     <p>O encapsulamento oculta os detalhes de implementação de uma classe.</p>
                                 </div>
                             </div>
                             <div class="card card__abs">
-                                <h4 class="header">Abstração</h4>
+                                <h4 class="header title">Abstração</h4>
                                 <div class="content">
                                     <p>A abstração permite que você se concentre nos aspectos essenciais de um problema, ignorando os detalhes.</p>
                                 </div>
@@ -355,7 +370,7 @@
                     </div>
                 </div>
                 <div class="memoria">
-                    <h3 class="memoria__title">Manejo de memória</h3>
+                    <h3 class="memoria__title title">Manejo de memória</h3>
                     <div class="memoria__content">
                         <p>O gerenciamento de memória é a tarefa de atribuir e liberar memória dinamicamente. Em C++, o gerenciamento de memória é feito manualmente pelo programador.</p>
                         <p>Esse gerenciamento pode ser uma tarefa complexa e propensa a erros. Por esse motivo, muitas bibliotecas e frameworks fornecem suporte para gerenciamento de memória automático.</p>
@@ -367,7 +382,7 @@
                     </div>
                 </div>
                 <div class="processos">
-                    <h3 class="processos__title">Threads e processos</h3>
+                    <h3 class="processos__title title">Threads e processos</h3>
                     <div class="processos__content">
                         <p>Os threads e processos são unidades de execução independentes que podem ser usadas para paralelizar seu código, eles são executados no mesmo espaço de memória, enquanto os processos são executados em espaços de memória separados. Outro processo importante é a paralelização pode melhorar o desempenho de seu código, mas pode ser difícil de implementar corretamente.</p>
                         <p>Thread é uma forma como um processo/tarefa de um software é divido em duas ou mais tarefas que podem ser executadas concorrentemente ("simultâneo").</p>
@@ -376,16 +391,27 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__content">
-            <h4 class="footer__title">Desenvolvido por <strong>David Magalhães</strong></h4>
+        <div class="mensagem">
+            <h4>Bons estudos!</h4>
         </div>
-        <div class="footer__social">
-            <ul class="social__list">
-                <li class="social__item"><a href="#" class="social__link">Github</a></li>
-                <li class="social__item"><a href="#" class="social__link">LinkedIn</a></li>
-            </ul>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer__content">
+            <h4 class="title author">Desenvolvido por <strong>David Magalhães</strong></h4>
+            <div class="footer__social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="assets/images/github.png" alt="Logo na cor preta do site github.">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="assets/images/linkedin.png" alt="Logo na preta do site linkedin.">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
